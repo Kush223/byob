@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>YouTube Channel Metrics</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>YouTube Channel Metrics</h1>
+        <!-- Add input field for multiple usernames -->
+        <label for="usernames">Enter YouTube Usernames (separated by commas):</label>
+        <input type="text" id="usernames" name="usernames">
+        <button onclick="fetchBatchChannelDetails()">Fetch Channel Details</button>
+        <div id="loading" style="display: none;">
+          Loading...
+        </div>
+        <div id="batch-results"></div>
+        <!-- <div id="error-message" class="error"></div> -->
+      </div>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="main.js"></script>
+
+</body>
+</html>
