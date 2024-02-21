@@ -4,41 +4,30 @@ To set up and run the application:
 Prerequisites:
 
 Make sure you have Node.js and npm (Node Package Manager) installed on your machine.
-Clone the Repository:
-
-bash
-Copy code
-git clone <git@github.com:Kush223/byob.git>
-Install Dependencies:
-
-bash
-Copy code
-cd <project_directory>
+1. Clone the Repository
+2. Install Dependencies:
 npm install
-Obtain YouTube Data API Key:
-
+3. Obtain YouTube Data API Key:
 You need to obtain an API key from the Google Cloud Console for accessing the YouTube Data API. Follow the instructions here to get your API key.
-Set API Key:
-
+4. Set API Key:
 Open the index.js file and replace the current 'apiKey' with your actual YouTube Data API key.
-Run the Application:
-
+5. Run the Application:
 Once you've set up the API key, you can run the application using the following command:
-bash
-Copy code
 npm start
-Usage:
+
+6. Usage:
 
 After running the application, open your web browser and go to http://localhost:3000.
 Enter one or more YouTube usernames separated by commas into the input field and click the "Fetch Details" button.
 The application will fetch the channel details and video metrics for the provided usernames and display them on the screen.
 Development Decisions and Insights:
 
-Choice of Technology:
+7. Choice of Technology:
 
 The application is built using Axios for making HTTP requests to the YouTube Data API.
 The frontend is implemented with HTML, CSS, and JavaScript for dynamic rendering of channel details and video metrics.
-Concurrency and Error Handling:
+
+8. Concurrency and Error Handling:
 
 Promises are used to fetch channel details and video metrics concurrently for multiple usernames, improving the performance of the application.
 Error handling is implemented to gracefully handle cases where a channel is not found for a given username. Users are alerted with an error message in such cases.
@@ -48,7 +37,8 @@ A loading indicator is displayed while fetching data from the YouTube Data API t
 User Interface:
 
 The user interface is designed to be simple and intuitive, allowing users to easily input YouTube usernames and view the corresponding channel details and video metrics.
-Challenges Faced and Solutions:
+
+9. Challenges Faced and Solutions:
 
 Handling Asynchronous Operations:
 
